@@ -29,3 +29,10 @@ cachSolve<-function(x,...){
   x$setInverse(m)
   m
 }
+
+a<-makeCacheMatrix();
+summary(a);
+a$setMatrix(matrix(c(2,5,6,18),nrow=2,ncol=2));
+a$getMatrix();
+cacheSolve(a);
+cacheSolve(a);
